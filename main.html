@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Gym Coach Lite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <button id="toggleTheme">🌙 Toggle Dark Mode</button>
+    <h1>AI Gym Coach Lite</h1>
+    <form id="fitnessForm">
+      <label>Age: <input type="number" id="age" required /></label>
+      <label>Gender:
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </label>
+      <label>Height (cm): <input type="number" id="height" required /></label>
+      <label>Weight (kg): <input type="number" id="weight" required /></label>
+      <label>Goal:
+        <select id="goal">
+          <option value="lose">Lose Weight</option>
+          <option value="gain">Gain Muscle</option>
+          <option value="maintain">Maintain</option>
+        </select>
+      </label>
+      <button type="submit">Generate Plan</button>
+    </form>
+    <div id="output"></div>
+    <div id="gptSection">
+    <h3>Ask AI Coach</h3>
+    <input type="text" id="gptInput" placeholder="Ask your fitness question..." />
+    <button id="gptButton">Ask GPT</button>
+    <div id="gptOutput"></div>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

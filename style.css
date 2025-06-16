@@ -1,0 +1,91 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  transition: background-color 0.4s ease;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+#output {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1 {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark #output {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+
+#output ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark .container {
+  background-color: #1e1e1e;
+}
+
+body.dark input,
+body.dark select {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+}
+
+#toggleTheme {
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+#gptSection {
+  margin-top: 30px;
+}
+
+#gptInput {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#gptButton {
+  margin-top: 10px;
+  background-color: #28a745;
+}
+
+#gptButton:hover {
+  background-color: #218838;
+}
+
+#gptOutput {
+  margin-top: 15px;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body.dark #gptOutput {
+  background-color: #2e2e2e;
+}
