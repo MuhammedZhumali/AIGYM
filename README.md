@@ -57,5 +57,4 @@ A simple Node.js + OpenAI-powered fitness planner and AI Q&A web app.
 - The AI Q&A feature requires a valid OpenAI API key with access to the Chat Completions API.
 - For local HTML file access, you may need to use a local server (like Live Server) for full functionality.
 
-## License
-^^
+# ^^
